@@ -3,13 +3,18 @@
 //#1 Write a function firstReverse that takes a single string parameter and 
 //   returns the string in reverse order.
 
-var firstReverse = function(str) {
-	var s = str.length;
-	var reverse = [];
-	for (var i=0; i<=s; i++){
-		reverse.push(str[s-i])
-	} 
-	return reverse.join('');
+// var firstReverse = function(str) {
+// 	var s = str.length;
+// 	var reverse = [];
+// 	for (var i=0; i<=s; i++){
+// 		reverse.push(str[s-i])
+// 	} 
+// 	return reverse.join('');
+// };
+
+var firstReverse = function(str){
+	var s = str.split('').reverse().join('');
+	return s;
 };
 
 
